@@ -1,4 +1,6 @@
-﻿namespace OperatorExercise
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace operators
 {
     public class Program
     {
@@ -37,8 +39,9 @@
             var r = double.Parse(Console.ReadLine());
 
             // the argument does not need to be the same as the answer
-            var answer = Calculations.AreaofCircle(r);
+            var answer = Calculation.AreaofCircle(r);
             Console.WriteLine(answer);
         }
     }
+
 }
